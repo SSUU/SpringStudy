@@ -145,8 +145,63 @@ hetype-quickstart:1.4
 [INFO] ------------------------------------------------------------------------
 ```
 
-4) 
+4) 테스트 확인
+: mvn test
++ test 폴더 확인
+```console
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running net.wds.AppTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s -
+ in net.wds.AppTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.423 s
+[INFO] Finished at: 2019-05-03T15:14:59+09:00
+[INFO] ------------------------------------------------------------------------
+```
 
+5) package 확인
+: mvn package
 
+```console
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running net.wds.AppTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s
+ in net.wds.AppTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ sample ---
+[INFO] Building jar: D:\maven\sample\target\sample-1.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.268 s
+[INFO] Finished at: 2019-05-03T15:16:38+09:00
+[INFO] ------------------------------------------------------------------------
+```
 
+6) Dependency 설정
+: pom.xml에 사용할 모듈 라이브러리 의존성 설정
+```pom.xml
+<dependency>
+    <groupId>commons-dbcp</groupId>
+    <artifactId>commons-dbcp</artifactId>
+    <version>1.2.1</version>
+</dependency> 
+```
 
+7) 
