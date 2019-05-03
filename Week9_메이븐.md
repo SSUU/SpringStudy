@@ -33,26 +33,6 @@
 - Phase와 Goal
 : Phase는 메이븐의 빌드 라이프 사이클을 각각의 단계를 의미한다. 각각의 Phase는 의존관계를 가지고 있어 해당 Phase가 수행되려면 이전 단계의 Phase가 모두 수행되어야 한다. 각각의 Phase는 어떤 일을 할지 정의하지 않고 어떤 플러그의 Goal을 실행할지 설정한다.
 
-
-2. 메이븐 설치 및 설정
-- Window 
-1) 메이븐 프로젝트 다운로드 : http://maven.apache.org/download.cgi
-2) apache-maven-3.6.1-bin.zip 다운로드 후 압축 해제
-3) 환경 변수 설정 
-  3-1) MAVEN_HOME : 압축해제 경로/apache-maven-3.6.1
-  3-2) Path에 메이븐 변수 추가 : %MAVEN_HOME%/bin
-4) cmd 창에서 메이븐 버전 확인
-   mvn --version
- 
- 
-
-
-
-
-
-
-
-
 2. POM - Project Object Model
 : pom(pom.xml)은 메이븐 프로젝트의 기본 정보와 의존성 정보들을 담고 있는 파일이다. 
 
@@ -71,7 +51,30 @@
 - dependencies : 의존성 정의
 
 
+2. 메이븐 설치 및 설정
+- Window 
+1) 메이븐 프로젝트 다운로드 : http://maven.apache.org/download.cgi
+2) apache-maven-3.6.1-bin.zip 다운로드 후 압축 해제
+3) 환경 변수 설정
+  3-1) MAVEN_HOME : 압축해제 경로/apache-maven-3.6.1
+  3-2) Path에 메이븐 변수 추가 : %MAVEN_HOME%/bin
+4) cmd 창에서 메이븐 버전 확인
+   mvn --version
+   
+- 실습 - 1
+1) 메이븐 프로젝트 생성하기
+* mvn archetype:generate
+```console
+D:\maven>mvn archetype:generate
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------< org.apache.maven:standalone-pom >-------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] --------------------------------[ pom ]---------------------------------
 
+.... 생략 ...
+
+```
 
 
 
