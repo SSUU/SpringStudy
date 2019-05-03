@@ -73,6 +73,49 @@ D:\maven>mvn archetype:generate
 [INFO] --------------------------------[ pom ]---------------------------------
 
 .... 생략 ...
+Choose a number or apply filter (format: [groupId:]artifactId, case sensitive co
+ntains): 1355: [엔터]
+Choose org.apache.maven.archetypes:maven-archetype-quickstart version:
+1: 1.0-alpha-1
+2: 1.0-alpha-2
+3: 1.0-alpha-3
+4: 1.0-alpha-4
+5: 1.0
+6: 1.1
+7: 1.3
+8: 1.4
+Choose a number: 8: [엔터]
+Define value for property 'groupId': net.wds 
+Define value for property 'artifactId': sample
+Define value for property 'version' 1.0-SNAPSHOT: : [엔터]
+Define value for property 'package' net.wds: : [엔터]
+Confirm properties configuration:
+groupId: net.wds
+artifactId: sample
+version: 1.0-SNAPSHOT
+package: net.wds
+ Y: : [엔터]
+
+hetype-quickstart:1.4
+[INFO] -------------------------------------------------------------------------
+---
+[INFO] Parameter: groupId, Value: net.wds
+[INFO] Parameter: artifactId, Value: sample
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] Parameter: package, Value: net.wds
+[INFO] Parameter: packageInPathFormat, Value: net/wds
+[INFO] Parameter: package, Value: net.wds
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] Parameter: groupId, Value: net.wds
+[INFO] Parameter: artifactId, Value: sample
+[INFO] Project created from Archetype in dir: D:\maven\sample
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:58 min
+[INFO] Finished at: 2019-05-03T14:46:58+09:00
+[INFO] ------------------------------------------------------------------------
+
 
 ```
 
