@@ -119,6 +119,34 @@ hetype-quickstart:1.4
 
 ```
 
+2) 자바 버전 수정
+: pom.xml에서 자바 버전 수정
+```xml
+<plugin>
+ <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-compiler-plugin</artifactId>
+   <configuration>
+    <source>1.8</source>
+    <target>1.8</target>
+    <encoding>UTF-8</encoding>
+   </configuration>
+ </plugin>
+```
+
+3) 컴파일 해보기
+: mvn complie
++ class 파일 생성 확인 : target/classes
+```console
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.189 s
+[INFO] Finished at: 2019-05-03T14:54:57+09:00
+[INFO] ------------------------------------------------------------------------
+```
+
+4) 
+
 
 
 
